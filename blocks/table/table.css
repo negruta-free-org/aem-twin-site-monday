@@ -1,0 +1,24 @@
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: var(--body-font-size-s, 14px);
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--light-color);
+}
+
+.table thead th {
+  color: var(--text-color-muted, #666);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.table tbody tr:hover {
+  background-color: var(--light-color);
+}
