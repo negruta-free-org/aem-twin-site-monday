@@ -1,0 +1,10 @@
+{
+  "name": "AEM SiteTwin",
+  "short_name": "SiteTwin",
+  "description": "Autonomous EDS onboarding agent and synthetic customer intelligence report",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": []
+}
