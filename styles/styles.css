@@ -148,7 +148,14 @@ pre {
 }
 
 main > div {
-  margin: 40px 16px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+main p,
+main li {
+  max-width: 75ch;
 }
 
 input,
