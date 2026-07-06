@@ -1,0 +1,49 @@
+.friction-map-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.friction-map-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 0.6fr 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.friction-map-row.friction-map-pass {
+  background-color: #e6f4ea;
+  color: #1e4620;
+}
+
+.friction-map-row.friction-map-fail {
+  background-color: #fce8e6;
+  color: #611a15;
+}
+
+.friction-map-cell {
+  font-size: var(--body-font-size-s, 14px);
+}
+
+.friction-map-status {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.friction-map-step {
+  font-weight: 600;
+}
+
+.friction-map-issues {
+  text-align: right;
+}
+
+@media (width <= 600px) {
+  .friction-map-row {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}

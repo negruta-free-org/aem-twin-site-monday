@@ -1,0 +1,51 @@
+.score-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.score-card-item {
+  border: 1px solid #dadada;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.score-card-metric {
+  font-size: var(--body-font-size-s, 14px);
+  color: var(--text-color-muted, #666);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.score-card-score-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+}
+
+.score-card-score {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.score-card-delta {
+  font-size: 0.9rem;
+  color: var(--text-color-muted, #666);
+}
+
+.score-card-score.sc-great {
+  color: #1e7e34;
+}
+
+.score-card-score.sc-ok {
+  color: #b06000;
+}
+
+.score-card-score.sc-poor {
+  color: #c62828;
+}
