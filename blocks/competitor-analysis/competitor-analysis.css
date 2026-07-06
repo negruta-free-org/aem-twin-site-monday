@@ -1,0 +1,56 @@
+.competitor-analysis-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 1rem 0;
+}
+
+.competitor-analysis-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.9fr 1fr 1.6fr 1.6fr;
+  gap: 16px;
+  align-items: start;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--light-color);
+  font-size: var(--body-font-size-s, 14px);
+}
+
+.ca-feature {
+  font-weight: 600;
+}
+
+.ca-sources,
+.ca-friction,
+.ca-doc {
+  color: var(--text-color-muted, #666);
+}
+
+.ca-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 2em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.ca-status-eds_has { background-color: #e6f4ea; color: #1a7f37; }
+.ca-status-eds_partial { background-color: #e8f0fe; color: #3b82f6; }
+.ca-status-eds_gap { background-color: #fff4e5; color: #f97316; }
+.ca-status-eds_architectural { background-color: #f1f1f1; color: #505050; }
+
+.ca-implemented {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ca-pass { color: #1a7f37; }
+.ca-fail { color: #cf222e; }
+
+@media (width <= 900px) {
+  .competitor-analysis-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
