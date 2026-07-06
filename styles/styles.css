@@ -11,33 +11,38 @@
  */
 
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* colors: modern, high-contrast, works for both technical and non-technical
+     internal audiences (SiteTwin brand_requirements) */
+  --background-color: #ffffff;
+  --light-color: #f4f6fb;
+  --dark-color: #1c2333;
+  --text-color: #12151f;
+  --text-color-muted: #56607a;
+  --link-color: #4f46e5;
+  --link-hover-color: #3730a3;
+  --accent-color: #06b6d4;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  /* fonts: system-ui stack for a modern, crisp look with zero extra network
+     requests; roboto (self-hosted) as fallback for platforms without one */
+  --body-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', roboto, roboto-fallback, sans-serif;
+  --heading-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', roboto-condensed, roboto-condensed-fallback, sans-serif;
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  /* body sizes (slightly larger base for readability across technical and
+     non-technical audiences) */
+  --body-font-size-m: 24px;
+  --body-font-size-s: 20px;
+  --body-font-size-xs: 18px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 58px;
+  --heading-font-size-xl: 46px;
+  --heading-font-size-l: 36px;
+  --heading-font-size-m: 28px;
+  --heading-font-size-s: 25px;
+  --heading-font-size-xs: 23px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 72px;
 }
 
 /* fallback fonts */
@@ -56,17 +61,17 @@
 @media (width >= 900px) {
   :root {
     /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
+    --body-font-size-m: 19px;
+    --body-font-size-s: 17px;
+    --body-font-size-xs: 15px;
 
     /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --heading-font-size-xxl: 48px;
+    --heading-font-size-xl: 38px;
+    --heading-font-size-l: 30px;
+    --heading-font-size-m: 24px;
+    --heading-font-size-s: 21px;
+    --heading-font-size-xs: 19px;
   }
 }
 
@@ -254,8 +259,8 @@ button.button.secondary:disabled:focus-visible {
 /* high-impact call-to-action */
 a.button.accent,
 button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--background-color);
 }
 
@@ -263,8 +268,8 @@ a.button.accent:hover,
 a.button.accent:focus-visible,
 button.button.accent:hover,
 button.button.accent:focus-visible {
-  border-color: var(--link-hover-color);
-  background-color: var(--link-hover-color);
+  border-color: var(--dark-color);
+  background-color: var(--dark-color);
 }
 
 a.button.accent[aria-disabled="true"],
